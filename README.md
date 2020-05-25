@@ -1,5 +1,5 @@
 # BreatheCSS
-Type as fast as you can and stay safe. [Play here](https://kurosakicoder.github.io/SpeedTyper/)
+Type as fast as you can and stay safe. [Link](https://kurosakicoder.github.io/BreatheCss/)
 
 ## Project Info
 This project contains all the files so you just need to clone and run the project.
