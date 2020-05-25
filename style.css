@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+/* background: #224941 url('./img/breathe.jpeg') no-repeat center center/cover; */
+body {
+
+    background: rgba(34, 73, 65, 0.5) url('./img/breathe2.jpeg') no-repeat center center/cover;
+    min-height: 100vh;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+/* content: '';
+    position: absolute; */
+
+/* body::after {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; #010f1c;
+    background-color: rgba(0, 255, 0, 0.5);
+} */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+
+    position: relative;
+    transform: scale(1);
+}
+
+.circle {
+    background-color: rgba(1, 15, 28, 1);
+    background: url('./img/water3.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* rgba(246, 215,146, 0.5) */
+/* background: conic-gradient(#55b7a4 0%,
+#4ca493 40%,
+#fff 40%,
+#fff 60%,
+#336d62 60%,
+#2a5b52 100%); */
+
+.fontname {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.gradient-circle {
+
+    background: conic-gradient(rgba(68, 172, 179, 1) 0%,
+            rgba(68, 172, 179, 1) 40%,
+            /* rgba(85, 183, 164, 0.5) 40%,
+            rgba(76, 164, 147, 0.5) 60%, */
+            rgba(78, 65, 73, 1) 40%,
+            rgba(120, 106, 114, 1) 60%,
+            rgba(165, 195, 209, 1) 60%,
+            rgba(65, 195, 209, 1) 100%);
+    height: 320px;
+    width: 320px;
+    z-index: -2;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.pointer {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+
+.pointer-container {
+    position: absolute;
+    top: -40px;
+    left: 140px;
+    width: 20px;
+    height: 190px;
+    animation: rotate 12.5s linear forwards infinite;
+    transform-origin: bottom center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container.grow {
+    animation: grow 5s linear forwards;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}
+
+.container.shrink {
+    animation: shrink 5s linear forwards;
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(1.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
